@@ -21,26 +21,18 @@ Edit
 ## 🛠️ How to Run
 
 1. **ETL Pipeline** - Clean the data and save to SQLite database:
+   
 ```bash
 python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+
 ML Pipeline - Train a classifier and save the model:
+python models/train_classifier.py data/DisasterResponse.db models/classifier.pklRun the Web App:
 
-bash
-Copy
-Edit
-python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-Run the Web App:
 
-bash
-Copy
-Edit
-python app/run.py
 Open your browser and navigate to:
-
-cpp
-Copy
-Edit
+python app/run.py
 http://0.0.0.0:3001/
+
 📊 Features
 Classifies disaster response messages into 36 categories.
 
