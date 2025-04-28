@@ -1,0 +1,2 @@
+# Ignore the classifier.pkl model file
+models/classifier.pkl
